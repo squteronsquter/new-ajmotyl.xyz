@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 100%;
+}
+@media only screen and (min-width: 576px) {
+  body {
+    font-size: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 125%;
+  }
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+/*#########*/
+/* Navbar */
+/*#########*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-center {
+  width: 90vw;
+  max-width: 1120px;
+}
+.nav-header {
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-header img {
+  width: 200px;
+  margin-left: -6px;
+  margin-bottom: -9px;
+}
+.nav-btn {
+  padding: 0.15rem 0.75rem;
+}
+.nav-btn svg {
+  font-size: 1.5rem;
+}
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  /* transition: var(--transition); */
+}
+.show-links {
+  height: 25rem;
+}
+
+.nav-link {
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2a2a2a;
+  /* color: var(--grey-1000); */
+  /* letter-spacing: var(--letterSpacing); */
+  padding: 1rem 0;
+  /* border-top: 1px solid var(--grey-500); */
+  /* transition: var(--transition); */
+}
+.active-link {
+  color: rgb(64, 73, 197);
+}
+.contact-link {
+  display: flex;
+  justify-content: center;
+}
+.contact-link a {
+  padding: 0.15rem 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    height: 6rem;
+  }
+  .nav-center {
+    display: flex;
+    align-items: center;
+  }
+  .nav-header {
+    padding: 0;
+    margin-right: 2rem;
+    height: auto;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+  .nav-links {
+    height: auto !important;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+  .nav-link {
+    padding: 0;
+    border-top: none;
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+  .contact-link {
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 0;
+  }
+}
+
+.erropagecontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.erropagecontainer > h1 {
+  color: rgb(117, 7, 7);
+  font-size: 8rem;
+}
+.erropagecontainer > h3 {
+  color: rgb(117, 7, 7);
+  font-size: 4rem;
+}
